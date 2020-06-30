@@ -14,8 +14,6 @@
 Goal: Move all the zeroes to one side and keep the relative ordering.
 When I see a 0 in the list, I want to keep swap its right adjacent element to bubble the 0 to the end while maintaining the order of the list. If the right adjacent element is a 0, I don't need to bubble the current 0 any further along the list.
 
-Worst-case is 2n = O(n)
-
 # Solution #2
 
 ```python
@@ -32,3 +30,4 @@ def moveZeroes(self, nums: List[int]) -> None:
 ```
 
 ## Explanation (IPR)
+Instead of swapipng l
