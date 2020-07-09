@@ -6,6 +6,6 @@ This repo is a centralized solution guide for leetcode problems I've struggled w
 - All solutions are in Python
 
 ## Table of Contents
-\# | Question Title | Solution | Difficulty
+# | Question Title | Solution | Difficulty
 ------------ | -------------
 
