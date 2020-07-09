@@ -2,7 +2,7 @@
 
 This repo is a centralized solution guide for leetcode problems I've struggled with. Each problem will not only contain the code solution, but also a worded explanation of as well. I hope this repo benefits others. *All solutions are in Python*
 
-## Table of Contents
+## Solutions
 
 # | Question Title | Solution | Difficulty
 | # | Title | Solution | Difficulty |
