@@ -4,7 +4,7 @@
 def isSameTree(self, p: TreeNode, q: TreeNode) -> bool: 
     if not q and not p:
         return True
-
+        
     if p and not q or q and not p:
         return False
     if p.val !=  q.val:

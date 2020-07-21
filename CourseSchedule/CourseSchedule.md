@@ -1,4 +1,4 @@
-# Solution 1
+# Solution 1 DFS with states
 
 ```python
 def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
@@ -9,7 +9,7 @@ def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
       adj_list = [[] for i in range(numCourses)]
       
       for x,y in prerequisites:
-          adj_list[x].append(y)
+          adj_list[y].append(x)
       '''
       Store states of nodes. We use a list because the vertex is represented as a number, which can be used to index a position in a list in constant time
       '''
