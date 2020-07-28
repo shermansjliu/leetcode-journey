@@ -49,7 +49,7 @@ def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
 ```
 
 ## Key Ideas
- * The goal is to detect wheter there is a cycle in the graph because a cycle cannot exist in a course schedule. E.g It does not make sense for Math101 to require Math102 and Math102 to require Math101.
+ * This approach detects a cycle because a cycle would result in an invalid course schedule. E.g It does not make sense for Math101 to require Math102 and Math102 to require Math101.
  * The edge list is first converted to an adjecency list because it makes accessing neighbors much easier
  * A vertex in the graph is in one of three states
   1. Unvisited - The vertex has yet to be visited by our algorithm
