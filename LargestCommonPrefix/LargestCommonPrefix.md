@@ -22,8 +22,18 @@ def longestCommonPrefix(self, strs: List[str]) -> str:
 
 
 ### Explanation
+**Pseudocode**
+- if the string is empty return an empty string
+- find the word with the lowest length : The length of the longest prefix is upperbounded by the length of the shortest word
+- For each character *c* in the shortest word
+    - Check that the corresponding character in every other word
+    - if there is a mismatch change our *matches* boolean to False and stop the loop
+- if *matches* is True, add *c* to our *prefix*  
+- if *matches* is False, we have our longest prefix, thus we break the entire loop
+- return *prefix*
 
-# Solution 2 - same big-O but faster run time
+
+# Solution 2 - same run time, but more elegant solution
 
 ```python
 def longestCommonPrefix(self, strs: List[str]) -> str:
@@ -40,4 +50,3 @@ def longestCommonPrefix(self, strs: List[str]) -> str:
                 return min_word[:i]
     return min_word
 ```
-### Explantion
