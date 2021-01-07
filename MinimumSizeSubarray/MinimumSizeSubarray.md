@@ -12,7 +12,12 @@
 
 ## Run Time
 
+- O(n^3)
+- For each element a n^2 operation is executed.
+
 ## Space Complexity
+
+- O(1)
 
 # Solution 2 Sliding Window
 
