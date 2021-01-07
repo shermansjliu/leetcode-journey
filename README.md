@@ -17,3 +17,4 @@ This repo is a centralized solution guide for leetcode problems I've struggled w
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)      | [Python](./MinimumSizeSubarray/MinimumSizeSubarray.md)            | Medium     |
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | [Python](./PathSumII/PathSumII.md) | Medium |
 | 424 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Python](./LongestRepeatingCharacterReplacement/LongestRepeatingCharacterReplacement.md) | Medium |
+| 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [Python](./MergeIntervals/MergeIntervals.md) | Medium |
