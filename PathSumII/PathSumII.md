@@ -40,3 +40,31 @@ def PathSumII(root:TreeNode, s:int ):
 
 - Worst case is if we need to store every single node i.e all paths from root to children sum up to s
 - N nodes, O(N)
+
+### Notes about DFS recursion vs DFS Stack
+
+```python
+       """
+        visited = set()
+        stack = []
+        add starting node to stack
+        while stack is not empty
+            node = stack.pop
+            if we haven't seen the node
+                mark the node as visited
+                Do stuff to it
+                add all of the nodes not visited children to the stack, #note that even with this check some nodes may be aded twice to the stack.
+                Here means we've visited all of the node's neighbors
+
+        Recursive
+        visted = set()
+
+        create a recursive function and call the root node on it
+        note that all nodes that go through the recursive calll should
+
+        def recursiveCall(node , visied.. add it other stuff if needed):
+            add node to visited
+            #Interestingly enough we don't need to check whether node is visited
+            #Call recursive call to non added neighbors
+        """
+```
