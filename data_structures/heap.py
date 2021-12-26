@@ -44,43 +44,23 @@ class heap:
     def _bubble_down(self):
         idx = 0
         n = len(self.h)
-        bubble = True
-        while bubble:
-            left_child_idx = (2*idx) +1
+        left_child_idx = (2*idx) +1
+        while left_child_idx < n:
+            
+            smaller_child_index = left_child_idx 
             right_child_idx = (2*idx) +2
-            if n > left_child_idx and n > right_child_idx: #if left and right child exists 
-                pass
-                #if greather than any child, swap with the minumum 
-                if self.h[left_child_idx] < self.h[idx] and self.h[left_child_idx] < self.h[right_child_idx]:
-                    pass #swap with left child
-                    self.h[idx], self.h[left_child_idx] = self.h[left_child_idx], self.h[idx]
-                    idx = left_child_idx
-                    bubble = True
-                    continue
-
-                elif self.h[right_child_idx] < self.h[idx] and self.h[right_child_idx] < self.h[left_child_idx]:
-                    pass #swap with right child 
-                    self.h[idx], self.h[right_child_idx] = self.h[right_child_idx], self.h[idx]
-                    idx = right_child_idx
-                    bubble = True
-                    continue
-
-            # if only left child exists 
-            elif n > left_child_idx:
-                if self.h[idx] > self.h[left_child_idx]:
-                    self.h[idx], self.h[left_child_idx] = self.h[left_child_idx], self.h[idx]
-                    idx = left_child_idx
-                    bubble = True
-                    continue 
-            bubble = False
-            # if only right child exists Not possible same with no children 
-            
-            
+            if n > right_child_idx:
+                if self.h[right_child_idx] < self.h[smaller_child_index]:
+                    smaller_child_index = right_child_idx
+            if self.h[idx] < self.h[smaller_child_index]:
+                break
+            self.h[idx], self.h[smaller_child_index] = self.h[smaller_child_index], self.h[idx]
+            idx = smaller_child_index 
+            left_child_idx = (2*idx) +1 
             
             
 _heap = heap()
 vals = [3,4,8,9,7,10,9, 15,20,13] 
-random.shuffle(vals)
 for v in vals:
     _heap.insert(v)
 print(_heap.h)
